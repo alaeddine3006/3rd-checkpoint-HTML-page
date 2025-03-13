@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio Créatif</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers CSS -->
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Home -->
+    <section id="home" class="flex-center">
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <img src="https://source.unsplash.com/800x400/?developer,code" alt="Image Développeur">
+    </section>
+
+    <!-- Section About -->
+    <section id="about">
+        <h2>À Propos de Moi</h2>
+        <div class="about-container">
+            <p>Je suis un développeur passionné par le web et la créativité numérique.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4QOcCGI6xOU" 
+                    title="Vidéo Développement Web" frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Section Work -->
+    <section id="work">
+        <h2>Mes Projets</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Projet</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Site E-commerce</td>
+                    <td>Une plateforme de vente en ligne intuitive et rapide.</td>
+                </tr>
+                <tr>
+                    <td>Portfolio</td>
+                    <td>Mon propre site web personnel.</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Section Resume -->
+    <section id="resume" class="flex-center">
+        <h2>Mon CV</h2>
+        <p><a href="mon_cv.pdf" download class="btn">📄 Télécharger mon CV</a></p>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="submit.php" method="POST">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+
+        <p>🎵 Une musique motivante en travaillant :</p>
+        <audio controls>
+            <source src="https://www.chosic.com/wp-content/uploads/2021/02/idea-21.mp3" type="audio/mp3">
+            Votre navigateur ne supporte pas l'audio.
+        </audio>
+    </section>
+    <!-- Pied de page -->
+    <footer>
+        <p>© RAHMINE Alaeddine2025 Mon Portfolio Créatif - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
