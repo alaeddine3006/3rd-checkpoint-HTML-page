@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio Créatif</title>
-    <link rel="stylesheet" href="style.css"> <!-- Lien vers CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -24,7 +24,8 @@
     <!-- Section Home -->
     <section id="home" class="flex-center">
         <h1>Bienvenue sur mon Portfolio</h1>
-        <img src="https://source.unsplash.com/800x400/?developer,code" alt="Image Développeur">
+        <img src="https://www.centre-europeen-formation.fr/wp-content/uploads/2023/04/developpeur-web-sans-diplome.jpg.webp" 
+             alt="Image Développeur">
     </section>
 
     <!-- Section About -->
@@ -88,15 +89,25 @@
         </form>
 
         <p>🎵 Une musique motivante en travaillant :</p>
-        <audio controls>
-            <source src="https://www.chosic.com/wp-content/uploads/2021/02/idea-21.mp3" type="audio/mp3">
+        <button id="playMusic" class="btn">▶️ Jouer la musique</button>
+        <audio id="bgMusic" loop>
+            <source src="https://p.scdn.co/mp3-preview/328781e5057df3e905a6182bf9877301daf2f237?cid=9c1e714b207b46429963ee8fa8bf0044" type="audio/mp3">
             Votre navigateur ne supporte pas l'audio.
         </audio>
     </section>
+
     <!-- Pied de page -->
     <footer>
-        <p>© RAHMINE Alaeddine2025 Mon Portfolio Créatif - Tous droits réservés.</p>
+        <p>© 2025 Mon Portfolio Créatif - Tous droits réservés.</p>
     </footer>
+
+    <script>
+        document.getElementById('playMusic').addEventListener('click', function() {
+            let audio = document.getElementById('bgMusic');
+            audio.play();
+            this.remove();
+        });
+    </script>
 
 </body>
 </html>
